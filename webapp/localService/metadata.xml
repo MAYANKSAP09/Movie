@@ -1,0 +1,697 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="/RAKEGA/DED_TD" xml:lang="en" sap:schema-version="1">
+            <EntityType Name="Owner" sap:label="Owner" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                </Key>
+                <Property Name="Gender" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Gender" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PrefLangDesc" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Langauge Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FullNameEn" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Full Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FullNameAr" Type="Edm.String" Nullable="false" MaxLength="200" sap:unicode="false" sap:label="Full Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SalutationDesc" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Salutation Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GenderDesc" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Gender" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="NationalityDesc" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Nationality" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Partner" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Owner" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="UserId" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="User Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="PartnerGuid" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="BP GUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Bpkind" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Partner Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Salutation" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Salutation" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name1Ar" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 1 in AR" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Name1En" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 1 in EN" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Name2Ar" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 2 in AR" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name2En" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 2 in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name3Ar" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 3 in AR" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name3En" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 3 in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name4Ar" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 4 in AR" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Name4En" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 4 in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="NameLAr" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 5 in AR" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="NameLEn" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Name 5 in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Nationality" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Nationality" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Dob" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date of Birth" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TelNumber" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Mobile Number" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="241" sap:unicode="false" sap:label="E-Mail" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="EmirateId" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Emirates ID Number" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Pob" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Place of Birth" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PrefLang" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Prf Commu. Lang" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Landline" Type="Edm.String" Nullable="false" MaxLength="11" sap:unicode="false" sap:label="Land Line Number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Website" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Website" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FaxNumber" Type="Edm.String" Nullable="false" MaxLength="11" sap:unicode="false" sap:label="Fax" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PoBoxNum" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="P.O.Box" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AltMobNumber" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Alternat Mob. Number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="TO_OD_OWNER_DOCUMENTS" Relationship="/RAKEGA/DED_TD.TO_OD_OWNER_DOCUMENTS" FromRole="FromRole_TO_OD_OWNER_DOCUMENTS" ToRole="ToRole_TO_OD_OWNER_DOCUMENTS"/>
+                <NavigationProperty Name="TO_OID_OWNER_IDENTIFICATION" Relationship="/RAKEGA/DED_TD.TO_OID_OWNER_IDENTIFICATION" FromRole="FromRole_TO_OID_OWNER_IDENTIFICATION" ToRole="ToRole_TO_OID_OWNER_IDENTIFICATION"/>
+                <NavigationProperty Name="TO_OB_OWNER_BN" Relationship="/RAKEGA/DED_TD.TO_OB_OWNER_BN" FromRole="FromRole_TO_OB_OWNER_BN" ToRole="ToRole_TO_OB_OWNER_BN"/>
+                <NavigationProperty Name="TO_OB_OWNER_BL" Relationship="/RAKEGA/DED_TD.TO_OB_OWNER_BL" FromRole="FromRole_TO_OB_OWNER_BL" ToRole="ToRole_TO_OB_OWNER_BL"/>
+                <NavigationProperty Name="TO_OJ_OWNER_JSCA" Relationship="/RAKEGA/DED_TD.TO_OJ_OWNER_JSCA" FromRole="FromRole_TO_OJ_OWNER_JSCA" ToRole="ToRole_TO_OJ_OWNER_JSCA"/>
+                <NavigationProperty Name="TO_OT_OWNER_TM" Relationship="/RAKEGA/DED_TD.TO_OT_OWNER_TM" FromRole="FromRole_TO_OT_OWNER_TM" ToRole="ToRole_TO_OT_OWNER_TM"/>
+                <NavigationProperty Name="TO_OR_OWNER_REL_CASES" Relationship="/RAKEGA/DED_TD.TO_OR_OWNER_REL_CASES" FromRole="FromRole_TO_OR_OWNER_REL_CASES" ToRole="ToRole_TO_OR_OWNER_REL_CASES"/>
+            </EntityType>
+            <EntityType Name="BusinessName" sap:label="Business Name" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                </Key>
+                <Property Name="GrossCapital" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:unicode="false" sap:unit="GrossCapitalCurr" sap:label="Gross Capital" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrossCapitalCurr" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Gross Capital Curr" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BnId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Business Name #" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="BnAr" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Business Name in AR" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="BnEn" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Business Name in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="LocResNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Local reservation no" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="FedRegNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Federal Registry no" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ValidityFrom" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity From" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ValidityTo" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity To" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="IssueDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date of Issue" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="LfId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Legal Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ImgExpDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Immigration Exp.Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="BnOwnership" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Ownership" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="AgId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Activity Group Id" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="BnStatus" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Dor" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date of Registration" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="BnLang" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Preffered Language" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Resfirstdt" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="First Reserve Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Extseconddt" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Second extention DT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Extlastdt" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Last extension date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Extensions" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="No of Extensions" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ExtType" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Extension type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AgName" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Activity Group Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LfName" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Legal Type Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PdfContent" Type="Edm.Binary" Nullable="false" sap:unicode="false" sap:label="Content" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="TO_BB_BN_BL" Relationship="/RAKEGA/DED_TD.TO_BB_BN_BL" FromRole="FromRole_TO_BB_BN_BL" ToRole="ToRole_TO_BB_BN_BL"/>
+                <NavigationProperty Name="TO_BO_BN_OWNER" Relationship="/RAKEGA/DED_TD.TO_BO_BN_OWNER" FromRole="FromRole_TO_BO_BN_OWNER" ToRole="ToRole_TO_BO_BN_OWNER"/>
+                <NavigationProperty Name="TO_BR_BN_RELATEDCASE" Relationship="/RAKEGA/DED_TD.TO_BR_BN_RELATEDCASE" FromRole="FromRole_TO_BR_BN_RELATEDCASE" ToRole="ToRole_TO_BR_BN_RELATEDCASE"/>
+                <NavigationProperty Name="TO_BD_BN_DOCUMENTS" Relationship="/RAKEGA/DED_TD.TO_BD_BN_DOCUMENTS" FromRole="FromRole_TO_BD_BN_DOCUMENTS" ToRole="ToRole_TO_BD_BN_DOCUMENTS"/>
+                <NavigationProperty Name="TO_BA_BN_ACTIVITY" Relationship="/RAKEGA/DED_TD.TO_BA_BN_ACTIVITY" FromRole="FromRole_TO_BA_BN_ACTIVITY" ToRole="ToRole_TO_BA_BN_ACTIVITY"/>
+            </EntityType>
+            <EntityType Name="BusinessLicense" sap:label="Business License" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                </Key>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RefBlEmirate" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Emirate" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="License #" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="BlKind" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="BL Kind" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LtId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="License Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="LfId" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Legal Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="AgId" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Activity Group Id" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="JscaId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="JSC Approval ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SourceEntity" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Entity Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BnId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Business Name #" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="TmId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Trade Mark #" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrossCapital" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:unicode="false" sap:unit="GrossCapitalCurr" sap:label="Gross Capital" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GrossCapitalCurr" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Gross Capital Curr" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+                <Property Name="EstEmpCount" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Est. Employee Count" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlOrigin" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="License Origin" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RefBlId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="License #" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RefBlOriginCountry" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Country" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Street" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="Street" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="City" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="City" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Landmark" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="LandMark" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PoBox" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="PO Box" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="NearbyBlId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="License #" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Longitude" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="12" sap:unicode="false" sap:label="Longitude" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Latitude" Type="Edm.Decimal" Nullable="false" Precision="15" Scale="12" sap:unicode="false" sap:label="Latitude" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Emirate" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Emirate" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UnitType" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Unit Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Landlord" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Landlord" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Units" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Number of Units" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UnitsNumber" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Unit Numbers" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityFrom" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity From" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityTo" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity To" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlStatus" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="BnEn" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Business Name in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BnAr" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Business Name in AR" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TmEn" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Trade Mark in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TmAr" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Trade Mark in Arabic" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RelationshipType" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Relationship Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RelationshipTypeDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Relationship Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlOriginCountryDesc" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Country Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AgName" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Activity Group Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlStatusDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LfName" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Legal Type Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LtNameEn" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="License Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LtNameAr" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="License Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EtName" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="EntityName" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EmirateDesc" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="Emirate Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlOriginDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Business License" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlKindDescEn" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="BL Kind" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlKindDescAr" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="BL Kind" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="TO_BA_BL_ACTIVITY" Relationship="/RAKEGA/DED_TD.TO_BA_BL_ACTIVITY" FromRole="FromRole_TO_BA_BL_ACTIVITY" ToRole="ToRole_TO_BA_BL_ACTIVITY"/>
+                <NavigationProperty Name="TO_BD_BL_DOCUMENTS" Relationship="/RAKEGA/DED_TD.TO_BD_BL_DOCUMENTS" FromRole="FromRole_TO_BD_BL_DOCUMENTS" ToRole="ToRole_TO_BD_BL_DOCUMENTS"/>
+                <NavigationProperty Name="TO_BR_BL_RELATEDCASE" Relationship="/RAKEGA/DED_TD.TO_BR_BL_RELATEDCASE" FromRole="FromRole_TO_BR_BL_RELATEDCASE" ToRole="ToRole_TO_BR_BL_RELATEDCASE"/>
+                <NavigationProperty Name="TO_BO_BL_OWNER" Relationship="/RAKEGA/DED_TD.TO_BO_BL_OWNER" FromRole="FromRole_TO_BO_BL_OWNER" ToRole="ToRole_TO_BO_BL_OWNER"/>
+                <NavigationProperty Name="TO_BB_BL_BN" Relationship="/RAKEGA/DED_TD.TO_BB_BL_BN" FromRole="FromRole_TO_BB_BL_BN" ToRole="ToRole_TO_BB_BL_BN"/>
+                <NavigationProperty Name="TO_BT_BL_TM" Relationship="/RAKEGA/DED_TD.TO_BT_BL_TM" FromRole="FromRole_TO_BT_BL_TM" ToRole="ToRole_TO_BT_BL_TM"/>
+                <NavigationProperty Name="TO_BJ_BL_JSCA" Relationship="/RAKEGA/DED_TD.TO_BJ_BL_JSCA" FromRole="FromRole_TO_BJ_BL_JSCA" ToRole="ToRole_TO_BJ_BL_JSCA"/>
+            </EntityType>
+            <EntityType Name="JSCA" sap:label="Jsca" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                </Key>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="JscaId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="JSC Approval ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="JscaType" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="JSCA Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityFrom" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity From" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityTo" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity To" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="LegalConsId" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Legal Consultant Id" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EconomistId" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Economist Id" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="GenDirectorId" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="General Director Id" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="JscaTypeDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label=" JSCA Type Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="TO_JD_JSCA_DOCUMENTS" Relationship="/RAKEGA/DED_TD.TO_JD_JSCA_DOCUMENTS" FromRole="FromRole_TO_JD_JSCA_DOCUMENTS" ToRole="ToRole_TO_JD_JSCA_DOCUMENTS"/>
+                <NavigationProperty Name="TO_JR_JSCA_RELATEDCASE" Relationship="/RAKEGA/DED_TD.TO_JR_JSCA_RELATEDCASE" FromRole="FromRole_TO_JR_JSCA_RELATEDCASE" ToRole="ToRole_TO_JR_JSCA_RELATEDCASE"/>
+                <NavigationProperty Name="BusinessLicense" Relationship="/RAKEGA/DED_TD.TO_BJ_BL_JSCA" FromRole="ToRole_TO_BJ_BL_JSCA" ToRole="FromRole_TO_BJ_BL_JSCA"/>
+                <NavigationProperty Name="TO_JB_JSCA_BL" Relationship="/RAKEGA/DED_TD.TO_JB_JSCA_BL" FromRole="FromRole_TO_JB_JSCA_BL" ToRole="ToRole_TO_JB_JSCA_BL"/>
+                <NavigationProperty Name="TO_JO_JSCA_OWNER" Relationship="/RAKEGA/DED_TD.TO_JO_JSCA_OWNER" FromRole="FromRole_TO_JO_JSCA_OWNER" ToRole="ToRole_TO_JO_JSCA_OWNER"/>
+            </EntityType>
+            <EntityType Name="TradeMark" sap:label="Trade Mark" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                </Key>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TmId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Trade Mark #" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TmEn" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Trade Mark in EN" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TmAr" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Trade Mark in Arabic" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BlId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="License #" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TmStatus" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Trade Mark Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityFrom" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity From" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityTo" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity To" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Owner" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Owner" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="TO_TD_TM_DOCUMENTS" Relationship="/RAKEGA/DED_TD.TO_TD_TM_DOCUMENTS" FromRole="FromRole_TO_TD_TM_DOCUMENTS" ToRole="ToRole_TO_TD_TM_DOCUMENTS"/>
+                <NavigationProperty Name="TO_TR_TM_RELATEDCASE" Relationship="/RAKEGA/DED_TD.TO_TR_TM_RELATEDCASE" FromRole="FromRole_TO_TR_TM_RELATEDCASE" ToRole="ToRole_TO_TR_TM_RELATEDCASE"/>
+            </EntityType>
+            <EntityType Name="Activity" sap:label="Activity" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                    <PropertyRef Name="ParentKey"/>
+                </Key>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeId" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActId" Type="Edm.String" Nullable="false" MaxLength="7" sap:unicode="false" sap:label="Activity Id" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActNameEn" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Activity NameEn" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActNameAr" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="Activity NameAr" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="BusinessName" Relationship="/RAKEGA/DED_TD.TO_BA_BN_ACTIVITY" FromRole="ToRole_TO_BA_BN_ACTIVITY" ToRole="FromRole_TO_BA_BN_ACTIVITY"/>
+                <NavigationProperty Name="BusinessLicense" Relationship="/RAKEGA/DED_TD.TO_BA_BL_ACTIVITY" FromRole="ToRole_TO_BA_BL_ACTIVITY" ToRole="FromRole_TO_BA_BL_ACTIVITY"/>
+            </EntityType>
+            <EntityType Name="Documents" sap:label="Documents" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                    <PropertyRef Name="ParentKey"/>
+                </Key>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Dokar" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Document Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Doknr" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Document" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Dokvr" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Doc. Version" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Doktl" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Document Part" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityFrom" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity From" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidityTo" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Validity To" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FileName" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="File Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FileContent" Type="Edm.Binary" Nullable="false" sap:unicode="false" sap:label="File Content" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DocTypeDesc" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Doc Type Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="BusinessName" Relationship="/RAKEGA/DED_TD.TO_BD_BN_DOCUMENTS" FromRole="ToRole_TO_BD_BN_DOCUMENTS" ToRole="FromRole_TO_BD_BN_DOCUMENTS"/>
+                <NavigationProperty Name="BusinessLicense" Relationship="/RAKEGA/DED_TD.TO_BD_BL_DOCUMENTS" FromRole="ToRole_TO_BD_BL_DOCUMENTS" ToRole="FromRole_TO_BD_BL_DOCUMENTS"/>
+                <NavigationProperty Name="Owner" Relationship="/RAKEGA/DED_TD.TO_OD_OWNER_DOCUMENTS" FromRole="ToRole_TO_OD_OWNER_DOCUMENTS" ToRole="FromRole_TO_OD_OWNER_DOCUMENTS"/>
+                <NavigationProperty Name="Jsca" Relationship="/RAKEGA/DED_TD.TO_JD_JSCA_DOCUMENTS" FromRole="ToRole_TO_JD_JSCA_DOCUMENTS" ToRole="FromRole_TO_JD_JSCA_DOCUMENTS"/>
+                <NavigationProperty Name="TradeMark" Relationship="/RAKEGA/DED_TD.TO_TD_TM_DOCUMENTS" FromRole="ToRole_TO_TD_TM_DOCUMENTS" ToRole="FromRole_TO_TD_TM_DOCUMENTS"/>
+            </EntityType>
+            <EntityType Name="RelatedCase" sap:label="Related Cases" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                    <PropertyRef Name="ParentKey"/>
+                </Key>
+                <Property Name="CaseType" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Case Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ExtKey" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Case ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ExtRef" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="External refer." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CaseGuid" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="Case Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PlanEndDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Planned Close Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Processor" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Processor" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Responsible" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Person Respons." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CaseTitle" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="Title" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EscalReason" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Escalation Reason" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Category" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Category" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Priority" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Priority" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SecureLevel" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="Auth. Level" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProfileId" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Status Profile" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatOrderno" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatPara" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="System Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatObjnr" Type="Edm.Guid" sap:unicode="false" sap:label="Object GUID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatLine" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="System Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatUserLine" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="User Status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ReasonCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="Reason" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="BusinessName" Relationship="/RAKEGA/DED_TD.TO_BR_BN_RELATEDCASE" FromRole="ToRole_TO_BR_BN_RELATEDCASE" ToRole="FromRole_TO_BR_BN_RELATEDCASE"/>
+                <NavigationProperty Name="BusinessLicense" Relationship="/RAKEGA/DED_TD.TO_BR_BL_RELATEDCASE" FromRole="ToRole_TO_BR_BL_RELATEDCASE" ToRole="FromRole_TO_BR_BL_RELATEDCASE"/>
+            </EntityType>
+            <EntityType Name="Identification" sap:label="Identification" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                    <PropertyRef Name="ParentKey"/>
+                </Key>
+                <Property Name="Key" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ParentKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RootKey" Type="Edm.Guid" Nullable="false" sap:unicode="false" sap:label="NodeID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Idnumber" Type="Edm.String" Nullable="false" MaxLength="60" sap:unicode="false" sap:label="ID number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Idtype" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="ID Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EntryDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Entry date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidDateFrom" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Valid from" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ValidDateTo" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Valid To" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FileContent" Type="Edm.Binary" Nullable="false" sap:unicode="false" sap:label="File Content" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <Association Name="TO_JD_JSCA_DOCUMENTS" sap:content-version="1" sap:label="Documents">
+                <End Type="/RAKEGA/DED_TD.JSCA" Multiplicity="1" Role="FromRole_TO_JD_JSCA_DOCUMENTS"/>
+                <End Type="/RAKEGA/DED_TD.Documents" Multiplicity="*" Role="ToRole_TO_JD_JSCA_DOCUMENTS"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_JD_JSCA_DOCUMENTS">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_JD_JSCA_DOCUMENTS">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_JR_JSCA_RELATEDCASE" sap:content-version="1" sap:label="Related Cases">
+                <End Type="/RAKEGA/DED_TD.JSCA" Multiplicity="1" Role="FromRole_TO_JR_JSCA_RELATEDCASE"/>
+                <End Type="/RAKEGA/DED_TD.RelatedCase" Multiplicity="*" Role="ToRole_TO_JR_JSCA_RELATEDCASE"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_JR_JSCA_RELATEDCASE">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_JR_JSCA_RELATEDCASE">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_JB_JSCA_BL" sap:content-version="1" sap:label="Business License">
+                <End Type="/RAKEGA/DED_TD.JSCA" Multiplicity="1" Role="FromRole_TO_JB_JSCA_BL"/>
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="ToRole_TO_JB_JSCA_BL"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_JB_JSCA_BL">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_JB_JSCA_BL">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_JO_JSCA_OWNER" sap:content-version="1" sap:label="Owner">
+                <End Type="/RAKEGA/DED_TD.JSCA" Multiplicity="1" Role="FromRole_TO_JO_JSCA_OWNER"/>
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="*" Role="ToRole_TO_JO_JSCA_OWNER"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_JO_JSCA_OWNER">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_JO_JSCA_OWNER">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BA_BN_ACTIVITY" sap:content-version="1" sap:label="Activity">
+                <End Type="/RAKEGA/DED_TD.BusinessName" Multiplicity="1" Role="FromRole_TO_BA_BN_ACTIVITY"/>
+                <End Type="/RAKEGA/DED_TD.Activity" Multiplicity="*" Role="ToRole_TO_BA_BN_ACTIVITY"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BA_BN_ACTIVITY">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BA_BN_ACTIVITY">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BD_BN_DOCUMENTS" sap:content-version="1" sap:label="Documents">
+                <End Type="/RAKEGA/DED_TD.BusinessName" Multiplicity="1" Role="FromRole_TO_BD_BN_DOCUMENTS"/>
+                <End Type="/RAKEGA/DED_TD.Documents" Multiplicity="*" Role="ToRole_TO_BD_BN_DOCUMENTS"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BD_BN_DOCUMENTS">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BD_BN_DOCUMENTS">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BR_BN_RELATEDCASE" sap:content-version="1" sap:label="Related Cases">
+                <End Type="/RAKEGA/DED_TD.BusinessName" Multiplicity="1" Role="FromRole_TO_BR_BN_RELATEDCASE"/>
+                <End Type="/RAKEGA/DED_TD.RelatedCase" Multiplicity="*" Role="ToRole_TO_BR_BN_RELATEDCASE"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BR_BN_RELATEDCASE">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BR_BN_RELATEDCASE">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BO_BN_OWNER" sap:content-version="1" sap:label="Owner">
+                <End Type="/RAKEGA/DED_TD.BusinessName" Multiplicity="1" Role="FromRole_TO_BO_BN_OWNER"/>
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="*" Role="ToRole_TO_BO_BN_OWNER"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BO_BN_OWNER">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BO_BN_OWNER">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BB_BN_BL" sap:content-version="1" sap:label="Business License">
+                <End Type="/RAKEGA/DED_TD.BusinessName" Multiplicity="1" Role="FromRole_TO_BB_BN_BL"/>
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="*" Role="ToRole_TO_BB_BN_BL"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BB_BN_BL">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BB_BN_BL">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BA_BL_ACTIVITY" sap:content-version="1" sap:label="Activity">
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="FromRole_TO_BA_BL_ACTIVITY"/>
+                <End Type="/RAKEGA/DED_TD.Activity" Multiplicity="*" Role="ToRole_TO_BA_BL_ACTIVITY"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BA_BL_ACTIVITY">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BA_BL_ACTIVITY">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BD_BL_DOCUMENTS" sap:content-version="1" sap:label="Documents">
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="FromRole_TO_BD_BL_DOCUMENTS"/>
+                <End Type="/RAKEGA/DED_TD.Documents" Multiplicity="*" Role="ToRole_TO_BD_BL_DOCUMENTS"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BD_BL_DOCUMENTS">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BD_BL_DOCUMENTS">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BR_BL_RELATEDCASE" sap:content-version="1" sap:label="Related Cases">
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="FromRole_TO_BR_BL_RELATEDCASE"/>
+                <End Type="/RAKEGA/DED_TD.RelatedCase" Multiplicity="*" Role="ToRole_TO_BR_BL_RELATEDCASE"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BR_BL_RELATEDCASE">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BR_BL_RELATEDCASE">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BO_BL_OWNER" sap:content-version="1" sap:label="Owner">
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="FromRole_TO_BO_BL_OWNER"/>
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="*" Role="ToRole_TO_BO_BL_OWNER"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BO_BL_OWNER">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BO_BL_OWNER">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BB_BL_BN" sap:content-version="1" sap:label="Business Name">
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="FromRole_TO_BB_BL_BN"/>
+                <End Type="/RAKEGA/DED_TD.BusinessName" Multiplicity="*" Role="ToRole_TO_BB_BL_BN"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BB_BL_BN">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BB_BL_BN">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BT_BL_TM" sap:content-version="1" sap:label="Trade Mark">
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="FromRole_TO_BT_BL_TM"/>
+                <End Type="/RAKEGA/DED_TD.TradeMark" Multiplicity="*" Role="ToRole_TO_BT_BL_TM"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BT_BL_TM">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BT_BL_TM">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_BJ_BL_JSCA" sap:content-version="1" sap:label="Jsca">
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="1" Role="FromRole_TO_BJ_BL_JSCA"/>
+                <End Type="/RAKEGA/DED_TD.JSCA" Multiplicity="*" Role="ToRole_TO_BJ_BL_JSCA"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_BJ_BL_JSCA">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_BJ_BL_JSCA">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_TD_TM_DOCUMENTS" sap:content-version="1" sap:label="Documents">
+                <End Type="/RAKEGA/DED_TD.TradeMark" Multiplicity="1" Role="FromRole_TO_TD_TM_DOCUMENTS"/>
+                <End Type="/RAKEGA/DED_TD.Documents" Multiplicity="*" Role="ToRole_TO_TD_TM_DOCUMENTS"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_TD_TM_DOCUMENTS">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_TD_TM_DOCUMENTS">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_TR_TM_RELATEDCASE" sap:content-version="1" sap:label="Related Cases">
+                <End Type="/RAKEGA/DED_TD.TradeMark" Multiplicity="1" Role="FromRole_TO_TR_TM_RELATEDCASE"/>
+                <End Type="/RAKEGA/DED_TD.RelatedCase" Multiplicity="*" Role="ToRole_TO_TR_TM_RELATEDCASE"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_TR_TM_RELATEDCASE">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_TR_TM_RELATEDCASE">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_OD_OWNER_DOCUMENTS" sap:content-version="1" sap:label="Documents">
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="1" Role="FromRole_TO_OD_OWNER_DOCUMENTS"/>
+                <End Type="/RAKEGA/DED_TD.Documents" Multiplicity="*" Role="ToRole_TO_OD_OWNER_DOCUMENTS"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_OD_OWNER_DOCUMENTS">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_OD_OWNER_DOCUMENTS">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_OID_OWNER_IDENTIFICATION" sap:content-version="1" sap:label="Identification">
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="1" Role="FromRole_TO_OID_OWNER_IDENTIFICATION"/>
+                <End Type="/RAKEGA/DED_TD.Identification" Multiplicity="*" Role="ToRole_TO_OID_OWNER_IDENTIFICATION"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_OID_OWNER_IDENTIFICATION">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_OID_OWNER_IDENTIFICATION">
+                        <PropertyRef Name="ParentKey"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_OB_OWNER_BN" sap:content-version="1" sap:label="Business Name">
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="1" Role="FromRole_TO_OB_OWNER_BN"/>
+                <End Type="/RAKEGA/DED_TD.BusinessName" Multiplicity="*" Role="ToRole_TO_OB_OWNER_BN"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_OB_OWNER_BN">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_OB_OWNER_BN">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_OB_OWNER_BL" sap:content-version="1" sap:label="Business License">
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="1" Role="FromRole_TO_OB_OWNER_BL"/>
+                <End Type="/RAKEGA/DED_TD.BusinessLicense" Multiplicity="*" Role="ToRole_TO_OB_OWNER_BL"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_OB_OWNER_BL">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_OB_OWNER_BL">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_OJ_OWNER_JSCA" sap:content-version="1" sap:label="Jsca">
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="1" Role="FromRole_TO_OJ_OWNER_JSCA"/>
+                <End Type="/RAKEGA/DED_TD.JSCA" Multiplicity="*" Role="ToRole_TO_OJ_OWNER_JSCA"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_OJ_OWNER_JSCA">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_OJ_OWNER_JSCA">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_OT_OWNER_TM" sap:content-version="1" sap:label="Trade Mark">
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="1" Role="FromRole_TO_OT_OWNER_TM"/>
+                <End Type="/RAKEGA/DED_TD.TradeMark" Multiplicity="*" Role="ToRole_TO_OT_OWNER_TM"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_OT_OWNER_TM">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_OT_OWNER_TM">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="TO_OR_OWNER_REL_CASES" sap:content-version="1" sap:label="Related Cases">
+                <End Type="/RAKEGA/DED_TD.Owner" Multiplicity="1" Role="FromRole_TO_OR_OWNER_REL_CASES"/>
+                <End Type="/RAKEGA/DED_TD.RelatedCase" Multiplicity="*" Role="ToRole_TO_OR_OWNER_REL_CASES"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_TO_OR_OWNER_REL_CASES">
+                        <PropertyRef Name="Key"/>
+                    </Principal>
+                    <Dependent Role="ToRole_TO_OR_OWNER_REL_CASES">
+                        <PropertyRef Name="Key"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="/RAKEGA/DED_TD_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="BusinessNameSet" EntityType="/RAKEGA/DED_TD.BusinessName" sap:label="Business Name" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="BusinessLicenseSet" EntityType="/RAKEGA/DED_TD.BusinessLicense" sap:label="Business License" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="JSCASet" EntityType="/RAKEGA/DED_TD.JSCA" sap:label="Jsca" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="TradeMarkSet" EntityType="/RAKEGA/DED_TD.TradeMark" sap:label="Trade Mark" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="ActivitySet" EntityType="/RAKEGA/DED_TD.Activity" sap:label="Activity" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="DocumentsSet" EntityType="/RAKEGA/DED_TD.Documents" sap:label="Documents" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="RelatedCaseSet" EntityType="/RAKEGA/DED_TD.RelatedCase" sap:label="Related Cases" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="IdentificationSet" EntityType="/RAKEGA/DED_TD.Identification" sap:label="Identification" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="OwnerSet" EntityType="/RAKEGA/DED_TD.Owner" sap:label="Owner" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <AssociationSet Name="TO_JB_JSCA_BLSet" Association="/RAKEGA/DED_TD.TO_JB_JSCA_BL" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="JSCASet" Role="FromRole_TO_JB_JSCA_BL"/>
+                    <End EntitySet="BusinessLicenseSet" Role="ToRole_TO_JB_JSCA_BL"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_JO_JSCA_OWNERSet" Association="/RAKEGA/DED_TD.TO_JO_JSCA_OWNER" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="JSCASet" Role="FromRole_TO_JO_JSCA_OWNER"/>
+                    <End EntitySet="OwnerSet" Role="ToRole_TO_JO_JSCA_OWNER"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BO_BN_OWNERSet" Association="/RAKEGA/DED_TD.TO_BO_BN_OWNER" sap:label="Owner" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessNameSet" Role="FromRole_TO_BO_BN_OWNER"/>
+                    <End EntitySet="OwnerSet" Role="ToRole_TO_BO_BN_OWNER"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_TD_TM_DOCUMENTSSet" Association="/RAKEGA/DED_TD.TO_TD_TM_DOCUMENTS" sap:label="Documents" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="TradeMarkSet" Role="FromRole_TO_TD_TM_DOCUMENTS"/>
+                    <End EntitySet="DocumentsSet" Role="ToRole_TO_TD_TM_DOCUMENTS"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_OB_OWNER_BNSet" Association="/RAKEGA/DED_TD.TO_OB_OWNER_BN" sap:label="Business Name" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="OwnerSet" Role="FromRole_TO_OB_OWNER_BN"/>
+                    <End EntitySet="BusinessNameSet" Role="ToRole_TO_OB_OWNER_BN"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_JD_JSCA_DOCUMENTSSet" Association="/RAKEGA/DED_TD.TO_JD_JSCA_DOCUMENTS" sap:label="Documents" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="JSCASet" Role="FromRole_TO_JD_JSCA_DOCUMENTS"/>
+                    <End EntitySet="DocumentsSet" Role="ToRole_TO_JD_JSCA_DOCUMENTS"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BA_BL_ACTIVITYSet" Association="/RAKEGA/DED_TD.TO_BA_BL_ACTIVITY" sap:label="Activity" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessLicenseSet" Role="FromRole_TO_BA_BL_ACTIVITY"/>
+                    <End EntitySet="ActivitySet" Role="ToRole_TO_BA_BL_ACTIVITY"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_OID_OWNER_IDENTIFICATIONSet" Association="/RAKEGA/DED_TD.TO_OID_OWNER_IDENTIFICATION" sap:label="Identification" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="OwnerSet" Role="FromRole_TO_OID_OWNER_IDENTIFICATION"/>
+                    <End EntitySet="IdentificationSet" Role="ToRole_TO_OID_OWNER_IDENTIFICATION"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BJ_BL_JSCASet" Association="/RAKEGA/DED_TD.TO_BJ_BL_JSCA" sap:label="Jsca" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessLicenseSet" Role="FromRole_TO_BJ_BL_JSCA"/>
+                    <End EntitySet="JSCASet" Role="ToRole_TO_BJ_BL_JSCA"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BB_BL_BNSet" Association="/RAKEGA/DED_TD.TO_BB_BL_BN" sap:label="Business Name" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessLicenseSet" Role="FromRole_TO_BB_BL_BN"/>
+                    <End EntitySet="BusinessNameSet" Role="ToRole_TO_BB_BL_BN"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BR_BN_RELATEDCASESet" Association="/RAKEGA/DED_TD.TO_BR_BN_RELATEDCASE" sap:label="Related Cases" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessNameSet" Role="FromRole_TO_BR_BN_RELATEDCASE"/>
+                    <End EntitySet="RelatedCaseSet" Role="ToRole_TO_BR_BN_RELATEDCASE"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_JR_JSCA_RELATEDCASESet" Association="/RAKEGA/DED_TD.TO_JR_JSCA_RELATEDCASE" sap:label="Related Cases" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="JSCASet" Role="FromRole_TO_JR_JSCA_RELATEDCASE"/>
+                    <End EntitySet="RelatedCaseSet" Role="ToRole_TO_JR_JSCA_RELATEDCASE"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BT_BL_TMSet" Association="/RAKEGA/DED_TD.TO_BT_BL_TM" sap:label="Trade Mark" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessLicenseSet" Role="FromRole_TO_BT_BL_TM"/>
+                    <End EntitySet="TradeMarkSet" Role="ToRole_TO_BT_BL_TM"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BB_BN_BLSet" Association="/RAKEGA/DED_TD.TO_BB_BN_BL" sap:label="Business License" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessNameSet" Role="FromRole_TO_BB_BN_BL"/>
+                    <End EntitySet="BusinessLicenseSet" Role="ToRole_TO_BB_BN_BL"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BA_BN_ACTIVITYSet" Association="/RAKEGA/DED_TD.TO_BA_BN_ACTIVITY" sap:label="Activity" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessNameSet" Role="FromRole_TO_BA_BN_ACTIVITY"/>
+                    <End EntitySet="ActivitySet" Role="ToRole_TO_BA_BN_ACTIVITY"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BD_BL_DOCUMENTSSet" Association="/RAKEGA/DED_TD.TO_BD_BL_DOCUMENTS" sap:label="Documents" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessLicenseSet" Role="FromRole_TO_BD_BL_DOCUMENTS"/>
+                    <End EntitySet="DocumentsSet" Role="ToRole_TO_BD_BL_DOCUMENTS"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_TR_TM_RELATEDCASESet" Association="/RAKEGA/DED_TD.TO_TR_TM_RELATEDCASE" sap:label="Related Cases" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="TradeMarkSet" Role="FromRole_TO_TR_TM_RELATEDCASE"/>
+                    <End EntitySet="RelatedCaseSet" Role="ToRole_TO_TR_TM_RELATEDCASE"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_OJ_OWNER_JSCASet" Association="/RAKEGA/DED_TD.TO_OJ_OWNER_JSCA" sap:label="Jsca" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="OwnerSet" Role="FromRole_TO_OJ_OWNER_JSCA"/>
+                    <End EntitySet="JSCASet" Role="ToRole_TO_OJ_OWNER_JSCA"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_OD_OWNER_DOCUMENTSSet" Association="/RAKEGA/DED_TD.TO_OD_OWNER_DOCUMENTS" sap:label="Documents" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="OwnerSet" Role="FromRole_TO_OD_OWNER_DOCUMENTS"/>
+                    <End EntitySet="DocumentsSet" Role="ToRole_TO_OD_OWNER_DOCUMENTS"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_OB_OWNER_BLSet" Association="/RAKEGA/DED_TD.TO_OB_OWNER_BL" sap:label="Business License" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="OwnerSet" Role="FromRole_TO_OB_OWNER_BL"/>
+                    <End EntitySet="BusinessLicenseSet" Role="ToRole_TO_OB_OWNER_BL"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BO_BL_OWNERSet" Association="/RAKEGA/DED_TD.TO_BO_BL_OWNER" sap:label="Owner" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessLicenseSet" Role="FromRole_TO_BO_BL_OWNER"/>
+                    <End EntitySet="OwnerSet" Role="ToRole_TO_BO_BL_OWNER"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_OR_OWNER_REL_CASESSet" Association="/RAKEGA/DED_TD.TO_OR_OWNER_REL_CASES" sap:label="Related Cases" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="OwnerSet" Role="FromRole_TO_OR_OWNER_REL_CASES"/>
+                    <End EntitySet="RelatedCaseSet" Role="ToRole_TO_OR_OWNER_REL_CASES"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_OT_OWNER_TMSet" Association="/RAKEGA/DED_TD.TO_OT_OWNER_TM" sap:label="Trade Mark" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="OwnerSet" Role="FromRole_TO_OT_OWNER_TM"/>
+                    <End EntitySet="TradeMarkSet" Role="ToRole_TO_OT_OWNER_TM"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BD_BN_DOCUMENTSSet" Association="/RAKEGA/DED_TD.TO_BD_BN_DOCUMENTS" sap:label="Documents" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessNameSet" Role="FromRole_TO_BD_BN_DOCUMENTS"/>
+                    <End EntitySet="DocumentsSet" Role="ToRole_TO_BD_BN_DOCUMENTS"/>
+                </AssociationSet>
+                <AssociationSet Name="TO_BR_BL_RELATEDCASESet" Association="/RAKEGA/DED_TD.TO_BR_BL_RELATEDCASE" sap:label="Related Cases" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="BusinessLicenseSet" Role="FromRole_TO_BR_BL_RELATEDCASE"/>
+                    <End EntitySet="RelatedCaseSet" Role="ToRole_TO_BR_BL_RELATEDCASE"/>
+                </AssociationSet>
+            </EntityContainer>
+            <atom:link
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="https://DEVGRPPORTAL.RAK.AE:443/sap/opu/odata/rakega/DED_TD/$metadata"/>
+                <atom:link
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="https://DEVGRPPORTAL.RAK.AE:443/sap/opu/odata/rakega/DED_TD/$metadata"/>
+                </Schema>
+            </edmx:DataServices>
+        </edmx:Edmx>

@@ -1,0 +1,297 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs02/vocabularies/Org.OData.Aggregation.V1.xml">
+		<edmx:Include Alias="Aggregation" Namespace="Org.OData.Aggregation.V1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/vocabularies/Org.OData.Capabilities.V1.xml">
+		<edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470974/Common.xml?api=v2">
+		<edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470971/Communication.xml?api=v2">
+		<edmx:Include Alias="vCard" Namespace="com.sap.vocabularies.Communication.v1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/vocabularies/Org.OData.Core.V1.xml">
+		<edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/vocabularies/Org.OData.Measures.V1.xml">
+		<edmx:Include Alias="CQP" Namespace="Org.OData.Measures.V1"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+	    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm">
+
+        <Annotations Target="/RAKEGA/DED_TD.BusinessLicense">
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="BlId"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="LtNameEn"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="LfName"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ValidityFrom"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ValidityTo"/>
+            </Record>BlStatusDesc
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ValidityTo"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="BlStatusDesc"/>
+            </Record>
+          </Collection>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="/RAKEGA/DED_TD.BusinessName">
+        <Annotation Term="UI.FieldGroup" Qualifier="GENERAL_FACET_1">
+          <Record Type="UI.FieldGroupType">
+            <PropertyValue Property="Data">
+              <Collection>
+                  <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnId"/>
+                </Record> 
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnEn"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnAr"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="LocResNo"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="GrossCapital"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="GrossCapitalCurr"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="ImgExpDate"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnOwnership"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="AgId"/>
+                </Record>
+
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+
+        <Annotation Term="UI.FieldGroup" Qualifier="GENERAL_FACET_2">
+          <Record Type="UI.FieldGroupType">
+            <PropertyValue Property="Data">
+              <Collection>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="LocResNo"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="FedRegNo"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="LfId"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="ValidityTo"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="ValidityFrom"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="IssueDate"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnStatus"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="Dor"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnLang"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+
+        <Annotation Term="UI.FieldGroup" Qualifier="GENERAL_FACET_3">
+          <Record Type="UI.FieldGroupType">
+            <PropertyValue Property="Data">
+              <Collection>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="Resfirstdt"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="Extseconddt"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="Extlastdt"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="Extensions"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="ExtType"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="AgName"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="StatusDesc"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="LfName"/>
+                </Record>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="PdfContent"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+
+
+        <Annotation Term="UI.Facets">
+          <Collection>
+            <Record Type="UI.CollectionFacet">
+              <PropertyValue Property="Facets">
+                <Collection>
+                  <Record Type="UI.ReferenceFacet">
+                    <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GENERAL_FACET_1"/>
+                  </Record>
+                  <Record Type="UI.ReferenceFacet">
+                    <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GENERAL_FACET_2"/>
+                  </Record>
+                  <Record Type="UI.ReferenceFacet">
+                    <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GENERAL_FACET_3"/>
+                  </Record>
+                </Collection>
+              </PropertyValue>
+              <PropertyValue Property="Label" String="Business Header Info"/>
+            </Record>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="TO_BA_BN_ACTIVITY/@UI.LineItem"/>
+              <PropertyValue Property="Label" String="Business Activity"/>
+            </Record>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="TO_BD_BN_DOCUMENTS/@UI.LineItem"/>
+              <PropertyValue Property="Label" String="Documents"/>
+              <PropertyValue Property="ID" String="idDoc"/>
+            </Record>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="TO_BR_BN_RELATEDCASE/@UI.LineItem"/>
+              <PropertyValue Property="Label" String="Business Related Case"/>
+            </Record>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="TO_BO_BN_OWNER/@UI.LineItem"/>
+              <PropertyValue Property="Label" String="Business Owners"/>
+            </Record>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="TO_BB_BN_BL/@UI.LineItem"/>
+              <PropertyValue Property="Label" String="Business License"/>
+            </Record>
+          </Collection>
+        </Annotation>
+
+        <Annotation Term="UI.HeaderInfo">
+          <Record Type="UI.HeaderInfoType">
+            <PropertyValue Property="TypeName" String="Business Name"/>
+            <PropertyValue Property="TypeNamePlural" String="Business Name"/>
+            <PropertyValue Property="Title">
+              <Record Type="UI.DataField">
+                <PropertyValue Property="Value" Path="CaseTitle"/>
+              </Record>
+            </PropertyValue>
+            <PropertyValue Property="ImageUrl" String="http://www.laptop-computer-comparison.com/image-files/sony-vaio-pink-laptop.jpg"/>
+            <PropertyValue Property="Description">
+              <Record Type="UI.DataField">
+                <PropertyValue Property="Value" Path="BnId"/>
+              </Record>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.HeaderFacets">
+          <Collection>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#HEADER_FACET0"/>
+            </Record>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#HEADER_FACET1"/>
+            </Record>
+            <Record Type="UI.ReferenceFacet">
+              <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#HEADER_FACET2"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.FieldGroup" Qualifier="HEADER_FACET0">
+          <Record Type="UI.FieldGroupType">
+            <PropertyValue Property="Data">
+              <Collection>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnEn"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.FieldGroup" Qualifier="HEADER_FACET2">
+          <Record Type="UI.FieldGroupType">
+            <PropertyValue Property="Data">
+              <Collection>
+                <Record Type="UI.DataField">
+                  <PropertyValue Property="Value" Path="BnAr"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="UI.FieldGroup" Qualifier="HEADER_FACET1">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="BnStatus"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="IssueDate"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.SelectionFields">
+          <Collection>
+            <PropertyPath>BnId</PropertyPath>
+            <PropertyPath>BnEn</PropertyPath>
+            <PropertyPath>BnAr</PropertyPath>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="BnId"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="BnAr"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="BnEn"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ValidityFrom"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ValidityTo"/>
+            </Record>
+          </Collection>
+        </Annotation>
+      </Annotations>
+    </Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
